@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMGoose</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMGoose</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryGooseM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryGooseM</module>
+        <!--
+        <module>../../../../working_thirdpartygoose/security/BouncyCastleDESJavaLibraryGooseM</module>
+        <module>../../../../working_thirdpartygoose/communication/XmlRpc/XmlRpcJavaLibraryGooseM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryGooseM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryGooseM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryGooseM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryGooseM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryGooseM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryGooseM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryGooseM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryGooseM</module>
+
+        <module>../../DebugJavaLibraryGooseM</module>             
+        <module>../../ResourceLibraryGooseM</module>
+        <module>../../ResourceJ2MEJavaLibraryGooseM</module>
+        <!--<module>../../AndroidResourceLibraryGooseM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryGooseM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryGooseM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryGooseM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryGooseM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryGooseM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryGooseM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryGooseM</module>
+
+        <module>../../games/GameInputLibraryGooseM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryGooseM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGooseM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryGooseM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryGooseM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryGooseM</module>   
+        <module>../../games/GameConfigurationJavaLibraryGooseM</module>
+
+        <module>../../games/GameIntermissionLibraryGooseM</module>
+
+        <module>../../GroupLibraryGooseM</module>
+
+        <module>../../input/NoSensorJavaLibraryGooseM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryGooseM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryGooseM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryGooseM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryGooseM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryGooseM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryGooseM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryGooseM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryGooseM</module>
+        <module>../../input/platform/pc/GameInputSwtJavaLibraryGooseM</module>
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryGooseM</module>
+        <module>../../input/MotionGestureJavaLibraryGooseM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryGooseM</module>
+
+        <module>../../games/GameInputPersistanceLibraryGooseM</module>
+        <module>../../games/GameInputNoPersistanceLibraryGooseM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryGooseM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryGooseM</module>
+        <module>../../input/NoGyroSensorJavaLibraryGooseM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryGooseM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryGooseM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryGooseM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryGooseM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryGooseM</module>
+        <module>../../media/sound/SoundJ2MELibraryGooseM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryGooseM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryGooseM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryGooseM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryGooseM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryGooseM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryGooseM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryGooseM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryGooseM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryGooseM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryGooseM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryGooseM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryGooseM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryGooseM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryGooseM</module>
+        <module>../../games/GameResourceJavaLibraryGooseM</module>
+        <module>../../games/GameSoundsJavaLibraryGooseM</module>
+
+        <module>../../input/TouchInputLibraryGooseP</module>
+
+        <module>../../media/MediaDataGooseM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryGooseM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryGooseM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryGooseM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryGooseM</module>
+
+        <module>../../FullScreenNoneJavaLibraryGooseM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryGooseM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryGooseM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryGooseM</module>
+
+        <module>../../lib/TrigJ2MELibraryGooseM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryGooseM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryGooseM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryGooseM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryGooseM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryGooseM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryGooseM</module>
+
+        <module>../GameNotificationJavaLibraryGooseM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryGooseM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryGooseM</module>
+        <module>../SWTJavaLibraryGooseM</module>
+        <module>../GameJ2MELibraryGooseM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOGooseM</module>
+        -->
+    
+    </modules>
+
+</project>
+

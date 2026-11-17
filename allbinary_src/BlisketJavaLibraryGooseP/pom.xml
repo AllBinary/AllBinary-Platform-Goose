@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPGoose</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPGoose</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryGooseP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryGooseM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryGooseM</module>        
+
+        <module>../data/DataTableInterfacesGooseM</module>
+        
+        <module>../QueueJavaLibraryGooseM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryGooseM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryGooseM</module>
+
+        <module>../JavaUtilLibraryGooseM</module>
+        <module>../NullInitInfoJavaLibraryGooseM</module>        
+        <module>../InitInfoJavaLibraryGooseM</module>
+        <module>../PreLoaderHttpJavaLibraryGooseM</module>
+        
+        <module>../TagsBaseJavaLibraryGooseM</module>
+        <module>../CustomLoaderJavaLibraryGooseM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryGooseM</module>
+        <module>../logic/data/file/FileJavaLibraryGooseM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryGooseM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryGooseM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryGooseM</module>
+
+        <module>../VisualStyleJavaLibraryGooseM</module>
+
+        <module>../ConfigurationJavaLibraryGooseM</module>
+
+        <module>../VisualTransformBaseJavaLibraryGooseM</module>
+
+        <module>../CategoryBaseJavaLibraryGooseM</module>
+        <module>../CategoryJavaLibraryGooseM</module>
+
+        <module>../UserJavaLibraryGooseM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryGooseM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryGooseM</module>
+        <module>../PaymentGatewayJavaLibraryGooseM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryGooseM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryGooseM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryGooseM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryGooseM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryGooseM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryGooseM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryGooseM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryGooseM</module>
+        <module>../data/EntityVisualTransformJavaLibraryGooseM</module>
+        <module>../data/EntityUserJavaLibraryGooseM</module>
+        <module>../data/EntityWorkflowJavaLibraryGooseM</module>
+
+        <module>../SMTPConfigurationJavaLibraryGooseM</module>
+        <module>../SMTPBaseJavaLibraryGooseM</module>
+
+        <module>../VisualTransformJavaLibraryGooseM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryGooseM</module>
+        <module>../GatewayJavaLibraryGooseM</module>
+        
+        <module>../WorkflowBaseJavaLibraryGooseM</module>
+        <module>../WorkflowJavaLibraryGooseM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryGooseM</module>
+        <module>../BlisketPreVOJavaLibraryGooseM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryGooseM</module>
+
+        <module>../UserCommerceJavaLibraryGooseM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryGooseM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryGooseM</module>
+        <module>../BlisketBaseJavaLibraryGooseM</module>
+
+        <module>../logging/LoggingGAEAllGooseM</module>
+        <module>../BlisketJavaLibraryGooseM</module>
+        
+    </modules>
+
+</project>
+

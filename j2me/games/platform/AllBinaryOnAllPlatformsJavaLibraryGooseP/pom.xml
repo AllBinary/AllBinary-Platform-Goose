@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>AllBinaryOnAllPlatformsJavaLibraryPOMGoose</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>AllBinaryOnAllPlatformsJavaLibraryPOMGoose</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        <module>../j2me/HTMLForJ2MEJavaLibraryGooseM</module>
+        -->
+        
+        <module>../../../games/PreGameJ2MEJavaLibraryGooseP</module>
+        <module>../../GameJ2MELibraryGooseP</module>
+        <module>../../CombatGameJavaLibraryPOGooseM</module>
+        <module>../../AdvancedCombatGameJavaLibraryGooseP</module>
+        
+        <module>../j2me/AllBinaryOnJ2MEBasePlatformJavaLibraryGooseM</module>
+        
+        <!--<module>../j2me/AllBinaryOnJ2MEPlatformJavaLibraryGooseM</module>-->
+        
+        <module>../j2se/AllBinaryOnJ2SEBasePlatformJavaLibraryGooseM</module>
+        
+        <!--
+        <module>../j2se/AllBinaryOnJ2SEPlatformJavaLibraryGooseM</module>
+        
+        <module>../html/AllBinaryOnHTMLBasePlatformJavaLibraryGooseM</module>
+        <module>../html/AllBinaryOnHTMLPlatformJavaLibraryGooseM</module>
+
+        <module>../android/AllBinaryOnAndroidBasePlatformJavaLibraryGooseM</module>
+        <module>../android/AllBinaryOnAndroidBasePlatformDependenciesJavaLibraryGooseM</module>
+        <module>../android/AllBinaryOnAndroidPlatformJavaLibraryGooseM</module>
+        <module>../android/AllBinaryOnAndroidPlatformDependenciesJavaLibraryGooseM</module>
+        
+        -->
+        
+        <module>../AllBinaryOptionalBasePlatformJavaLibraryGooseM</module>
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

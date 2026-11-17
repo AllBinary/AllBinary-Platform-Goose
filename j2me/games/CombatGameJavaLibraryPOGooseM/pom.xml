@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMGoose</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMGoose</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryGooseM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryGooseM</module>
+
+        <module>../../../physics/MovementJavaLibraryGooseM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryGooseM</module>
+        <module>../../games/PickupGameJavaLibraryGooseM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryGooseM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryGooseM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryGooseM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryGooseM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryGooseM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryGooseM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryGooseM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryGooseM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryGooseM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryGooseM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryGooseM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryGooseM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGooseM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryGooseM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryGooseM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryGooseM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryGooseM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryGooseM</module>
+        <module>../../games/CollisionLibraryGooseM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryGooseM</module>
+
+        <module>../../games/PickupLayerJavaLibraryGooseM</module>
+
+        <module>../../games/DamageGameJavaLibraryGooseM</module>
+        <module>../../games/DropJavaLibraryGooseM</module>
+        <module>../../games/WeaponLayerJavaLibraryGooseM</module>
+
+        <module>../../games/CombatGameJavaLibraryGooseM</module>
+        <module>../../games/LifeJavaLibraryGooseM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryGooseM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryGooseM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryGooseM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryGooseM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryGooseM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryGooseM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryGooseM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryGooseM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackGooseP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workgoose/j2me/games/strategy/rts/RTSGameJavaLibraryGooseP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryGooseP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryGooseM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryGooseM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryGooseM</module>
+
+        <module>../../input/TrackingEventJavaLibraryGooseM</module>
+        <module>../../../game/behavior/BehaviorLibraryGooseP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryGooseP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryGooseM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryGooseM</module>
+        <module>../../input/AllBinaryMagneticFieldSensorJavaLibraryGooseM</module>
+        <!--<module>../../android/VirtualKeyboardJavaLibraryGooseM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

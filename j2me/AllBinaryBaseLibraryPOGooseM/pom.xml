@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryBaseLibraryPOMGoose</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryBaseLibraryPOMGoose</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        <module>../CommonJavaLibraryGooseM</module>
+        <module>../TempBaseJavaLibraryGooseM</module>
+        
+        <module>../../allbinary_src/LogGooseM</module>
+        <module>../../allbinary_src/allbinary_src_designpatterns_srcGooseM</module>
+        <module>../../allbinary_src/data/BaseDataJavaLibraryGooseM</module>
+        <module>../../allbinary_src/cache/BaseCacheJavaLibraryGooseM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJavaLibraryGooseM</module>
+        <module>../../allbinary_src/logic/BasePreloaderJ2MEJavaLibraryGooseM</module>
+
+        <module>../ExceptionHTMLJavaLibraryGooseM</module>
+        <module>../J2MEExceptionLibraryGooseM</module>
+        <module>../../allbinary_src/J2SEExceptionLibraryGooseM</module>
+        <module>../J2MEUtilJavaLibraryGooseM</module>
+        <module>../J2MEColorJavaLibraryGooseM</module>
+        <module>../EventJ2MELibraryGooseM</module>
+
+        <module>../../allbinary_src/LogNoPlatformJavaLibraryGooseM</module>
+        <module>../../allbinary_src/LogJ2MEJavaLibraryGooseM</module>
+        <module>../../allbinary_src/LogJ2SEJavaLibraryGooseM</module>
+        <!--<module>../../allbinary_src/LogAndroidJavaLibraryGooseM</module>-->
+        <module>../logging/LoggingNoneGooseM</module>
+        <module>../logging/LoggingJ2MEAllGooseM</module>
+        <module>../logging/LoggingJ2MEExceptionGooseM</module>
+        <!--<module>../logging/LoggingAndroidAllGooseM</module>-->
+        <!--
+        //While it is a possible dependency option it really does not fit here
+        //as such it is actually build in the final POM builds instead
+        <module>../logging/LoggingRemoteExceptionGooseM</module>  
+        -->
+        
+        <module>../J2MEWindowingJavaLibraryGooseM</module>
+        
+        <module>../lib/BaseMathLibraryGooseM</module>
+        <module>../lib/BasicMathLibraryGooseM</module>
+        
+        <module>../../allbinary_src/ThreadLibraryGooseM</module>
+        <!--<module>../../allbinary_src/ThreadHTMLLibraryGooseM</module>-->
+        <module>../../replace_these_stub_projects/allbinary_src/NoneOnlyJavaLibraryGooseM</module>
+        <module>../../allbinary_src/ThreadJ2MELibraryGooseM</module>
+        <module>../time/TimeJavaLibraryGooseM</module>
+
+        <module>../statistics/ApplicationStatisticsJ2SELibraryGooseM</module>
+        <module>../statistics/ApplicationStatisticsJ2MELibraryGooseM</module>
+        <module>../statistics/ApplicationStatisticsJavaLibraryGooseM</module>
+
+        <module>../../allbinary_src/logging/BasicLogConfigTypeJavaLibraryGooseM</module>
+        <module>../../allbinary_src/logging/LogConfigTypeGameClientJavaLibraryGooseM</module>
+
+        <module>../../allbinary_src/hardware/HardwareLibraryPOGooseM</module>
+
+        <module>../lib/TrigBaseLibraryGooseM</module>
+
+    </modules>
+
+</project>
+

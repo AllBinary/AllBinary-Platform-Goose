@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>AllBinaryPersistenceLibraryPGoose</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>AllBinaryPersistenceLibraryPGoose</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+        
+        <!--
+        -->
+        <module>../allbinary_src/cache/AllBinaryCacheLibraryGooseM</module>
+        <module>../allbinary_src/PermutationsJavaLibraryGooseM</module>
+        <module>../allbinary_src/logic/BasePreloaderFileJavaLibraryGooseM</module>
+        <module>../allbinary_src/logic/data/file/FileJavaLibraryGooseM</module>
+        <module>../allbinary_src/logic/data/file/FileJ2SEJavaLibraryGooseM</module>
+        <!--<module>../allbinary_src/data/DataJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/logic/data/file/FileUnamedJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/logic/data/file/FileAdvancedJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/PreLoaderJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/FileInitInfoJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/PreLoaderFileJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/PreLoaderLicenseJavaLibraryGooseM</module>-->
+        <module>../j2me/PCResourceLibraryGooseM</module>
+        <module>../j2me/ProgressJ2MEJavaLibraryGooseM</module>
+        <module>../allbinary_src/licensing/ClientInfoBaseJavaLibraryGooseM</module>
+        <!--<module>../allbinary_src/licensing/RemoteXmlRpcJavaLibraryGooseM</module>-->
+        <!--<module>../allbinary_src/licensing/LicenseClientJavaLibraryGooseM</module>-->
+
+        <!--
+        <module>../allbinary_src/PreLoaderLicenseJavaLibraryGooseM</module>
+        -->
+    </modules>
+
+</project>
+
