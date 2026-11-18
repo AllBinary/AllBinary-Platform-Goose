@@ -101,7 +101,7 @@
   
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpGoose</artifactId>
+            <artifactId>microemu-midp-for-polyglotGoose</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>

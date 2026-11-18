@@ -91,12 +91,12 @@ recursive fn BooleanUtil__m_toStringFromBooleanArray_1(this: i64, p_booleanArray
         var l_size: i64 = jr_alen(l_booleanArray);
         if true {
             var l_index: i64 = 0;
-            var jfirst_N67133 = true;
+            var jfirst_N67145 = true;
             loop {
-                if !jfirst_N67133 {
+                if !jfirst_N67145 {
                     l_index = ji(l_index + 1);
                 }
-                jfirst_N67133 = false;
+                jfirst_N67145 = false;
                 if !jt(jb(l_index < l_size)) { break; }
             jm_appendboolean_1(l_stringMaker, jr_aget(l_booleanArray, l_index));
             if jexc != 0 { break; }

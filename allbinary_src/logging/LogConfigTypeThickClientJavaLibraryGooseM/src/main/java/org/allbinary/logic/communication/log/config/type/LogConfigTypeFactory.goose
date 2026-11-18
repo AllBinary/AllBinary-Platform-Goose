@@ -1,0 +1,74 @@
+/*
+ * 
+ * AllBinary Open License Version 1 
+ * Copyright (c) 2022 AllBinary 
+ *  
+ * By agreeing to this license you and any business entity you represent are 
+ * legally bound to the AllBinary Open License Version 1 legal agreement. 
+ *  
+ * You may obtain the AllBinary Open License Version 1 legal agreement from 
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+ *  
+ * Created By: Travis Berthelot 
+ *   
+ */
+// Generated Code Do Not Modify
+// jpackage org.allbinary.logic.communication.log.config.type
+
+// jclass LogConfigTypeFactory extends Object
+// jfield LogConfigTypeFactory NO_DESCRIPTION OS FACTORYERROR FILE FILEERROR IDLOGGING REPLACE REPLACE_INFO REPLACEERROR
+var LogConfigTypeFactory__sinit: i64 = 0;
+var LogConfigTypeFactory__sv_instance: i64 = 0;
+recursive fn LogConfigTypeFactory__sget_instance() -> i64 { LogConfigTypeFactory__clinit(); return LogConfigTypeFactory__sv_instance; }
+recursive fn LogConfigTypeFactory__sset_instance(v: i64) -> i64 { LogConfigTypeFactory__clinit(); LogConfigTypeFactory__sv_instance = v; return v; }
+recursive fn LogConfigTypeFactory__clinit() -> i64 {
+    if LogConfigTypeFactory__sinit != 0 { return 0; }
+    LogConfigTypeFactory__sinit = 1;
+    Object__clinit();
+    LogConfigTypeFactory__sv_instance = LogConfigTypeFactory__new_0();
+    return 0;
+}
+recursive fn LogConfigTypeFactory__initFields(this: i64) -> i64 {
+    LogConfigTypeFactory__uset_NO_DESCRIPTION(this, jr_str("No Description"));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_OS(this, LogConfigType__new_2(jr_str("Operating System"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_FACTORYERROR(this, LogConfigType__new_2(jr_str("Factory Error"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_FILE(this, LogConfigType__new_2(jr_str("File"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_FILEERROR(this, LogConfigType__new_2(jr_str("File Error"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_IDLOGGING(this, LogConfigType__new_2(jr_str("ID Logging"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_REPLACE(this, LogConfigType__new_2(jr_str("Replace"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_REPLACE_INFO(this, LogConfigType__new_2(jr_str("Replace Info"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__uset_REPLACEERROR(this, LogConfigType__new_2(jr_str("Replace Error"), LogConfigTypeFactory__uget_NO_DESCRIPTION(this)));
+    if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn LogConfigTypeFactory__s_getInstance_0() -> i64 {
+    LogConfigTypeFactory__clinit();
+        return LogConfigTypeFactory__sget_instance();
+    return 0;
+}
+recursive fn LogConfigTypeFactory__init_0(this: i64) -> i64 {
+    Object__init_0(this);
+    if jexc != 0 { return 0; }
+    LogConfigTypeFactory__initFields(this);
+        jm_add_1(LogConfigTypes__sget_LOGGING(), LogConfigTypeFactory__uget_OS(this));
+        if jexc != 0 { return 0; }
+        jm_add_1(LogConfigTypes__sget_LOGGING(), LogConfigTypeFactory__uget_FACTORYERROR(this));
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn LogConfigTypeFactory__new_0() -> i64 {
+    LogConfigTypeFactory__clinit();
+    let this = jnew(jcid_LogConfigTypeFactory, jsize_LogConfigTypeFactory);
+    LogConfigTypeFactory__init_0(this);
+    if jexc != 0 { return 0; }
+    return this;
+}
+

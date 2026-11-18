@@ -66,12 +66,12 @@ recursive fn StringValidationUtil__m_isNumber_1(this: i64, p_value: i64) -> i64 
         var l_numberOfDecimalPoints: i64 = 0;
         if true {
             var l_index: i64 = 0;
-            var jfirst_N66222 = true;
+            var jfirst_N66234 = true;
             loop {
-                if !jfirst_N66222 {
+                if !jfirst_N66234 {
                     l_index = ji(l_index + 1);
                 }
-                jfirst_N66222 = false;
+                jfirst_N66234 = false;
                 if !jt(jb(l_index < jm_length_0(l_value))) { break; }
             var l_digit: i64 = jm_charAt_1(l_value, l_index);
             if jexc != 0 { break; }

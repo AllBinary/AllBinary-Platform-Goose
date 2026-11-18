@@ -1,0 +1,195 @@
+/*
+ * 
+ * AllBinary Open License Version 1 
+ * Copyright (c) 2022 AllBinary 
+ *  
+ * By agreeing to this license you and any business entity you represent are 
+ * legally bound to the AllBinary Open License Version 1 legal agreement. 
+ *  
+ * You may obtain the AllBinary Open License Version 1 legal agreement from 
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+ *  
+ * Created By: Travis Berthelot 
+ *   
+ */
+// Generated Code Do Not Modify
+// jpackage org.allbinary.game.input.event
+
+// jclass RawKeyEventHandler extends Object
+// jfield RawKeyEventHandler logUtil eventListenerInterfaceList
+var RawKeyEventHandler__sinit: i64 = 0;
+var RawKeyEventHandler__sv_instance: i64 = 0;
+recursive fn RawKeyEventHandler__sget_instance() -> i64 { RawKeyEventHandler__clinit(); return RawKeyEventHandler__sv_instance; }
+recursive fn RawKeyEventHandler__sset_instance(v: i64) -> i64 { RawKeyEventHandler__clinit(); RawKeyEventHandler__sv_instance = v; return v; }
+var RawKeyEventHandler__sv_TOTAL_LISTENERS: i64 = 0;
+recursive fn RawKeyEventHandler__sget_TOTAL_LISTENERS() -> i64 { RawKeyEventHandler__clinit(); return RawKeyEventHandler__sv_TOTAL_LISTENERS; }
+recursive fn RawKeyEventHandler__sset_TOTAL_LISTENERS(v: i64) -> i64 { RawKeyEventHandler__clinit(); RawKeyEventHandler__sv_TOTAL_LISTENERS = v; return v; }
+var RawKeyEventHandler__sv_LISTENER_LABEL: i64 = 0;
+recursive fn RawKeyEventHandler__sget_LISTENER_LABEL() -> i64 { RawKeyEventHandler__clinit(); return RawKeyEventHandler__sv_LISTENER_LABEL; }
+recursive fn RawKeyEventHandler__sset_LISTENER_LABEL(v: i64) -> i64 { RawKeyEventHandler__clinit(); RawKeyEventHandler__sv_LISTENER_LABEL = v; return v; }
+recursive fn RawKeyEventHandler__clinit() -> i64 {
+    if RawKeyEventHandler__sinit != 0 { return 0; }
+    RawKeyEventHandler__sinit = 1;
+    Object__clinit();
+    RawKeyEventHandler__sv_instance = RawKeyEventHandler__new_0();
+    RawKeyEventHandler__sv_TOTAL_LISTENERS = jr_str("Total Listeners: ");
+    RawKeyEventHandler__sv_LISTENER_LABEL = jr_str(" Listener: ");
+    return 0;
+}
+recursive fn RawKeyEventHandler__initFields(this: i64) -> i64 {
+    RawKeyEventHandler__uset_logUtil(this, LogUtil__s_getInstance_0());
+    if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__s_getInstance_0() -> i64 {
+    RawKeyEventHandler__clinit();
+        return RawKeyEventHandler__sget_instance();
+    return 0;
+}
+recursive fn RawKeyEventHandler__init_0(this: i64) -> i64 {
+    Object__init_0(this);
+    if jexc != 0 { return 0; }
+    RawKeyEventHandler__initFields(this);
+        RawKeyEventHandler__uset_eventListenerInterfaceList(this, BasicArrayListD__new_0());
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__new_0() -> i64 {
+    RawKeyEventHandler__clinit();
+    let this = jnew(jcid_RawKeyEventHandler, jsize_RawKeyEventHandler);
+    RawKeyEventHandler__init_0(this);
+    if jexc != 0 { return 0; }
+    return this;
+}
+recursive fn RawKeyEventHandler__m_removeAllListeners_0(this: i64) -> i64 {
+        RawKeyEventHandler__uset_eventListenerInterfaceList(this, BasicArrayListD__new_0());
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_addListeners_1(this: i64, p_vector: i64) -> i64 {
+    var l_vector: i64 = p_vector;
+        var l_eventListenerInterface: i64 = 0;
+        var l_size: i64 = jm_size_0(l_vector);
+        if jexc != 0 { return 0; }
+        if true {
+            var l_index: i64 = 0;
+            var jfirst_N67148 = true;
+            loop {
+                if !jfirst_N67148 {
+                    l_index = ji(l_index + 1);
+                }
+                jfirst_N67148 = false;
+                if !jt(jb(l_index < l_size)) { break; }
+            l_eventListenerInterface = jm_get_1(l_vector, l_index);
+            if jexc != 0 { break; }
+            jm_addListener_1(this, l_eventListenerInterface);
+            if jexc != 0 { break; }
+            }
+        }
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_addListenerSingleThreaded_1(this: i64, p_eventListenerInterface: i64) -> i64 {
+    var l_eventListenerInterface: i64 = p_eventListenerInterface;
+        if jt(jnot(jm_contains_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface))) {
+            jm_add_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface);
+            if jexc != 0 { return 0; }
+        }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_addListener_1(this: i64, p_eventListenerInterface: i64) -> i64 {
+    var l_eventListenerInterface: i64 = p_eventListenerInterface;
+        if jt(jnot(jm_contains_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface))) {
+            jm_add_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface);
+            if jexc != 0 { return 0; }
+        }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_removeListenerSingleThreaded_1(this: i64, p_eventListenerInterface: i64) -> i64 {
+    var l_eventListenerInterface: i64 = p_eventListenerInterface;
+        jm_remove_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface);
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_removeListener_1(this: i64, p_eventListenerInterface: i64) -> i64 {
+    var l_eventListenerInterface: i64 = p_eventListenerInterface;
+        jm_remove_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_eventListenerInterface);
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_fireEvent_3(this: i64, p_keyCode: i64, p_deviceId: i64, p_repeated: i64) -> i64 {
+    var l_keyCode: i64 = p_keyCode;
+    var l_deviceId: i64 = p_deviceId;
+    var l_repeated: i64 = p_repeated;
+        var l_eventListenerInterface: i64 = 0;
+        var l_index: i64 = 0;
+        while jt(jb(l_index < jm_size_0(RawKeyEventHandler__uget_eventListenerInterfaceList(this)))) {
+            loop {
+                l_eventListenerInterface = jm_get_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_index);
+                if jexc != 0 { break; }
+                jm_process_4(this, l_keyCode, l_deviceId, l_repeated, l_eventListenerInterface);
+                if jexc != 0 { break; }
+                break;
+            }
+            if jexc != 0 && (jr_catch(jcid_Exception)) {
+                var l_e: i64 = jexc;
+                jexc = 0;
+                var l_commonStrings: i64 = CommonStrings__s_getInstance_0();
+                if jexc != 0 { break; }
+                jm_put_4(RawKeyEventHandler__uget_logUtil(this), jgetf_EXCEPTION(l_commonStrings), this, jgetf_FIRE_EVENT(EventStrings__s_getInstance_0()), l_e);
+                if jexc != 0 { break; }
+            }
+            if jexc != 0 { break; }
+            l_index = ji(l_index + 1);
+        }
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_process_4(this: i64, p_keyCode: i64, p_deviceId: i64, p_repeated: i64, p_eventListenerInterface: i64) -> i64 {
+    var l_keyCode: i64 = p_keyCode;
+    var l_deviceId: i64 = p_deviceId;
+    var l_repeated: i64 = p_repeated;
+    var l_eventListenerInterface: i64 = p_eventListenerInterface;
+        jm_onEventRaw_3(l_eventListenerInterface, l_keyCode, l_deviceId, l_repeated);
+        if jexc != 0 { return 0; }
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_getEventListenerInterfaceListP_0(this: i64) -> i64 {
+        return RawKeyEventHandler__uget_eventListenerInterfaceList(this);
+    return 0;
+}
+recursive fn RawKeyEventHandler__m_toString_0(this: i64) -> i64 {
+        var l_stringBuffer: i64 = StringMaker__new_0();
+        if jexc != 0 { return 0; }
+        jm_append_1(l_stringBuffer, RawKeyEventHandler__sget_TOTAL_LISTENERS());
+        if jexc != 0 { return 0; }
+        jm_appendint_1(l_stringBuffer, jm_size_0(RawKeyEventHandler__uget_eventListenerInterfaceList(this)));
+        if jexc != 0 { return 0; }
+        var l_eventListenerInterface: i64 = 0;
+        var l_index: i64 = 0;
+        while jt(jb(l_index < jm_size_0(RawKeyEventHandler__uget_eventListenerInterfaceList(this)))) {
+            loop {
+                l_eventListenerInterface = jm_get_1(RawKeyEventHandler__uget_eventListenerInterfaceList(this), l_index);
+                if jexc != 0 { break; }
+                jm_append_1(l_stringBuffer, RawKeyEventHandler__sget_LISTENER_LABEL());
+                if jexc != 0 { break; }
+                jm_append_1(l_stringBuffer, jm_toString_0(l_eventListenerInterface));
+                if jexc != 0 { break; }
+                break;
+            }
+            if jexc != 0 && (jr_catch(jcid_Exception)) {
+                var l_e: i64 = jexc;
+                jexc = 0;
+                var l_commonStrings: i64 = CommonStrings__s_getInstance_0();
+                if jexc != 0 { break; }
+                jm_put_4(RawKeyEventHandler__uget_logUtil(this), jgetf_EXCEPTION(l_commonStrings), this, jgetf_TOSTRING(l_commonStrings), l_e);
+                if jexc != 0 { break; }
+            }
+            if jexc != 0 { break; }
+            l_index = ji(l_index + 1);
+        }
+        if jexc != 0 { return 0; }
+        return jm_toString_0(l_stringBuffer);
+    return 0;
+}
+

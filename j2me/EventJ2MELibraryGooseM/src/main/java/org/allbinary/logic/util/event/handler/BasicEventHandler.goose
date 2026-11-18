@@ -60,12 +60,12 @@ recursive fn BasicEventHandler__m_addListeners_1(this: i64, p_vector: i64) -> i6
         if jexc != 0 { return 0; }
         if true {
             var l_index: i64 = 0;
-            var jfirst_N67433 = true;
+            var jfirst_N67438 = true;
             loop {
-                if !jfirst_N67433 {
+                if !jfirst_N67438 {
                     l_index = ji(l_index + 1);
                 }
-                jfirst_N67433 = false;
+                jfirst_N67438 = false;
                 if !jt(jb(l_index < l_size)) { break; }
             l_eventListenerInterface = jm_get_1(l_vector, l_index);
             if jexc != 0 { break; }
@@ -83,12 +83,12 @@ recursive fn BasicEventHandler__m_removeListeners_1(this: i64, p_vector: i64) ->
         if jexc != 0 { return 0; }
         if true {
             var l_index: i64 = 0;
-            var jfirst_N67733 = true;
+            var jfirst_N67738 = true;
             loop {
-                if !jfirst_N67733 {
+                if !jfirst_N67738 {
                     l_index = ji(l_index + 1);
                 }
-                jfirst_N67733 = false;
+                jfirst_N67738 = false;
                 if !jt(jb(l_index < l_size)) { break; }
             l_eventListenerInterface = jm_get_1(l_vector, l_index);
             if jexc != 0 { break; }

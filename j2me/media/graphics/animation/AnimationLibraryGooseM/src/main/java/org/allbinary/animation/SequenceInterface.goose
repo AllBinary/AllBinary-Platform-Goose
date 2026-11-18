@@ -1,0 +1,27 @@
+/*
+ *
+ * AllBinary Open License Version 1
+ * Copyright (c) 2011 AllBinary
+ * 
+ * By agreeing to this license you and any business entity you represent are
+ * legally bound to the AllBinary Open License Version 1 legal agreement.
+ * 
+ * You may obtain the AllBinary Open License Version 1 legal agreement from
+ * AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+ * 
+ * Created By: Travis Berthelot
+ *  
+ */
+// Generated Code Do Not Modify
+// jpackage org.allbinary.animation
+
+// jinterface SequenceInterface
+// jabstract SequenceInterface setSequence_1
+// jabstract SequenceInterface getSequence_0
+var SequenceInterface__sinit: i64 = 0;
+recursive fn SequenceInterface__clinit() -> i64 {
+    if SequenceInterface__sinit != 0 { return 0; }
+    SequenceInterface__sinit = 1;
+    return 0;
+}
+

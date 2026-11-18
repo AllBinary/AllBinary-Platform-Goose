@@ -124,7 +124,7 @@
 
         <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryGooseM</module>
         <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryGooseM</module>
-        <module>../../input/AllBinaryMagneticFieldSensorJavaLibraryGooseM</module>
+        <!--<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryGooseM</module>-->
         <!--<module>../../android/VirtualKeyboardJavaLibraryGooseM</module>-->
 
     </modules>
